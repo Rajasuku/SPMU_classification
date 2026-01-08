@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 import joblib
 import pandas as pd
 
@@ -10,7 +11,8 @@ st.write(
 )
 
 # Load model
-model = joblib.load('models/model.pkl')
+MODEL_PATH = os.path.join("models", "model.pkl")
+model = joblib.load(MODEL_PATH)
 
 # Sidebar inputs
 st.sidebar.header("Input Features")
