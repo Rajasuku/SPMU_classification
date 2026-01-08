@@ -11,7 +11,7 @@ st.write(
 )
 
 # Load model
-MODEL_PATH = os.path.join("models", "model.pkl")
+ODEL_PATH = os.path.join("models", "model.pkl")
 model = joblib.load(MODEL_PATH)
 
 # Sidebar inputs
